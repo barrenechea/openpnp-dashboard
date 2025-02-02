@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-body {
-  background-color: #03121c;
-}
+@plugin 'tailwindcss-motion';

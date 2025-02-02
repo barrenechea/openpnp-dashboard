@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import airFlow from "../assets/airFlow.json";
+import Nozzle from "../assets/svg/nozzle";
 
 interface Nozzle {
   id: string;
@@ -43,7 +44,7 @@ const Dashboard: React.FC = () => {
       : parseInt(((status.done / status.total) * 100).toString());
 
   return (
-    <div className="flex w-screen h-screen overflow-hidden">
+    <div className="flex w-screen h-screen bg-slate-900 overflow-hidden">
       {/* Background effect container */}
       <div className="absolute inset-0 overflow-hidden">
         <div
@@ -133,7 +134,7 @@ const Dashboard: React.FC = () => {
                   : ""
               }`}
             >
-              <img className="h-full" src="/nozzle.svg" alt="nozzle" />
+              <Nozzle className="h-full" />
               {nozzle.isVacActive && (
                 <div className="transition-opacity top-0 absolute">
                   <Lottie animationData={airFlow} />
@@ -149,10 +150,10 @@ const Dashboard: React.FC = () => {
             </div>
             <div className="mt-10 z-50 w-1/4 relative">
               {nozzle.isVacActive && (
-                <div className="w-full aspect-[2/1] z-0 bg-sky-500 animate-ping rounded-lg absolute" />
+                <div className="w-full aspect-2/1 z-0 bg-sky-500 animate-ping rounded-lg absolute" />
               )}
               <div
-                className={`transition-colors z-50 w-full aspect-[2/1] rounded-lg ${
+                className={`transition-colors z-50 w-full aspect-2/1 rounded-lg ${
                   nozzle.isVacActive ? "bg-sky-500" : "bg-sky-950"
                 }`}
               />
