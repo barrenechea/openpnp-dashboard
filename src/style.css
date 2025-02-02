@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#app{
-  width:100vw;
-  height:100vh;
+body {
   background-color: #03121c;
 }

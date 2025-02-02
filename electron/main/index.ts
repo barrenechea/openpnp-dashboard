@@ -1,12 +1,9 @@
 import { app, BrowserWindow, ipcMain, screen, shell } from 'electron'
 import express from 'express'
-import bodyParser from 'body-parser'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import os from 'node:os'
-import { createRequire } from 'node:module'
 
-const require = createRequire(import.meta.url)
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // The built directory structure
@@ -51,7 +48,7 @@ function startStatusServer() {
   const PORT = 10064
 
   // Middleware
-  serverApp.use(bodyParser.json())
+  serverApp.use(express.json())
 
   // Single machine status object with optional fields
   let machineStatus = {
