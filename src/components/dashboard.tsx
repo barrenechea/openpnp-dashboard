@@ -136,8 +136,8 @@ const Dashboard: React.FC = () => {
             >
               <Nozzle className="h-full" />
               {nozzle.isVacActive && (
-                <div className="transition-opacity top-0 absolute">
-                  <Lottie animationData={airFlow} />
+                <div className="absolute inset-0 transition-opacity">
+                  <Lottie animationData={airFlow} className="size-full" />
                 </div>
               )}
               <div
