@@ -24,15 +24,15 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.0.0",
+    "@tailwindcss/postcss": "^4.0.3",
     "electron": "^34.0.2",
     "electron-builder": "^26.0.1",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^4.0.0",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.3",
     "typescript": "^5.7.3",
     "vite": "^6.0.11",
     "vite-plugin-electron": "^0.29.0",
-    "vite-plugin-electron-renderer": "^0.14.5"
+    "vite-plugin-electron-renderer": "^0.14.6"
   },
   "dependencies": {
     "@types/react": "^19.0.8",
@@ -42,6 +42,6 @@
     "lottie-react": "^2.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwindcss-motion": "^1.0.0"
+    "tailwindcss-motion": "^1.0.1"
   }
 }
